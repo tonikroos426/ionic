@@ -1,0 +1,61 @@
+<ion-view hide-nav-bar="true" class="bg">
+  <ion-header-bar class="bar no_background no_border" >
+    <button onclick="javascript:history.go(-1)" class="button button-clear text_white icon  ion-ios-arrow-thin-left"></button>
+  </ion-header-bar>
+  <ion-content class="has-footer has-header" scroll="false" >
+    <div class="martop70 " >
+      <h2 class=" text_white text_center best-world">Your Gender</h2>
+      <p class="text_center text_white fs-14 best-world">What Your are Looking For</p>
+      
+      <div class="card no_background martop50">
+         
+        <div class="row boxmargin">
+            <div class="col"><img src="img/gender_03.png" width="100%"></div>
+            <div class="col text_center text_white fs-14">I AM</div>
+            <div class="col"><img src="img/gender_05.png" width="100%"></div>
+            
+          </div>
+
+
+          <div  class=" woman" > 
+          <input type="radio" name="r1" value="1"  ng-model="select.gender" class="fs-16 radiobox"> &nbsp;
+          <strong ui-sref="register">Man</strong> and i'm looking for a woman
+          </div>  
+          <div class="row"></div>
+
+          <div  class=" woman1" > 
+          <input type="radio" name="r1" value="2" ng-model="select.gender" class="fs-16 radiobox">&nbsp;
+          <strong ui-sref="register">Woman</strong> and i'm looking for a man
+          </div>
+         <!--  <ion-list>
+            <ion-radio ng-model="choice" ng-value="'A'">Choose A</ion-radio>
+            <ion-radio class=" woman" ng-model="choice" ng-value="'B'">Choose B</ion-radio>
+          </ion-list>
+ -->
+          <!-- <ion-list>
+
+            <ion-checkbox ng-model="filter.red">Man and i'm looking for a woman</ion-checkbox>
+            <div class="row"></div>
+            <ion-checkbox class=" woman" ng-model="filter.yellow">Woman and i'm looking for a man</ion-checkbox>
+
+
+          </ion-list>
+ -->
+
+      <!-- <div  class=" text_center" ui-sref="register">
+        <img src="img/gender_10.png" width="100%">
+        </div>
+      <div class="row"></div>
+      <div  class=" text_center" ui-sref="register">
+        <img src="img/gender_14.png" width="100%">
+        </div> -->
+    </div>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer ">
+    <button class="button button-block martop0 best-world" ng-click="Gonext();"   ><!-- ng-click="doLogin();" -->
+    NEXT
+    <i class="icon ion-android-arrow-forward float_right"></i>
+    </button>
+  </div>
+</ion-view>
